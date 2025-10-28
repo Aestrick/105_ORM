@@ -2,7 +2,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Komiks', {
+    await queryInterface.createTable('komik', { // <-- UBAH INI
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -29,6 +29,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Komiks');
+    await queryInterface.dropTable('komik'); // <-- UBAH INI
   }
 };
