@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "12345",
+    "database": "perpustakaan",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": 5432
+  },
+  "test": {
+    "username": "postgres",
+    "password": "12345",
+    "database": "perpustakaan_test",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": 5432
+  },
+  "production": {
+    "username": "postgres",
+    "password": "12345",
+    "database": "perpustakaan_production",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": 5432
+  }
+}
