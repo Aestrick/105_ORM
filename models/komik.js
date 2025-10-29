@@ -14,13 +14,15 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Komik.init({
+    // Kita TIDAK perlu definisikan 'id'
     judul: DataTypes.STRING,
     penulis: DataTypes.STRING,
-    penerbit: DataTypes.STRING
+    deskripsi: DataTypes.TEXT // <-- Sesuaikan dengan SQL-mu
   }, {
     sequelize,
     modelName: 'Komik',
-    tableName: 'komik'
+    tableName: 'komik', // <-- WAJIB 1: Samakan dengan nama tabel di MySQL
+    timestamps: false // <-- WAJIB 2: Matikan timestamp Sequelize
   });
   return Komik;
 };
